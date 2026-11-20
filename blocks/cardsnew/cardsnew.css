@@ -19,15 +19,15 @@
   transition: box-shadow 180ms ease, transform 180ms ease;
 }
 
-.cardsnew > ul > li > .cardsnew-card-body:first-child {
-  grid-column: 1 / -1;
-}
-
 .cardsnew .cardsnew-card-body {
   align-self: center;
   margin: 0;
   padding: 24px 28px;
   border-left: 4px solid var(--link-color);
+}
+
+.cardsnew > ul > li > .cardsnew-card-body:first-child {
+  grid-column: 1 / -1;
 }
 
 .cardsnew .cardsnew-card-image {
@@ -56,7 +56,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .cardsnew > ul > li {
     grid-template-columns: 1fr;
   }
